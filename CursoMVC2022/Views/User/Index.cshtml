@@ -1,0 +1,24 @@
+﻿@model List<CursoMVC2022.Models.User>
+@{
+    ViewData["Title"] = "Index";
+    string Nombre = "Patito";
+}
+
+<h1>Index</h1>
+<p>@Nombre</p>
+
+@foreach (var user in Model)
+{
+    <div>
+        @user.Email
+    </div>
+}
+
+
+
+
+
+@*@for (int i = 0; i < 100; i++)
+    {
+        <b>@i</b>
+    }*@
